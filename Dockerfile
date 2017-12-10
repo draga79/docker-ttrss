@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Christian Lück <christian@lueck.tv>
+MAINTAINER Stefano Marinelli <stefano@dragas.it>
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
   nginx supervisor php5-fpm php5-cli php5-curl php5-gd php5-json \
