@@ -1,13 +1,13 @@
 # docker-ttrss
 
-This [Docker](https://www.docker.com) image allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
+This [Docker](https://www.docker.com) image, based on (and forked by) clue/tt-rss (which seems unmaintained and not working anymore), allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
 Keep your feed history to yourself and access your RSS and atom feeds from everywhere.
 You can access it through an easy to use webinterface on your desktop, your mobile browser
 or using one of the available apps.
 
 ## About Tiny Tiny RSS
 
-> *From [the official readme](http://tt-rss.org/redmine/projects/tt-rss/wiki):*
+> *From the official readme:*
 
 Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator,
 designed to allow you to read news from any location,
@@ -26,11 +26,11 @@ Just start up a new database container:
 $ docker run -d --name ttrssdb nornagon/postgres
 ```
 
-And because this docker image is available as a [trusted build on the docker index](https://index.docker.io/u/clue/ttrss/),
+And because this docker image is available as a [trusted build on the docker index](https://hub.docker.com/r/dragas/ttrss/),
 using it is as simple as launching this Tiny Tiny RSS installation linked to your fresh database:
 
 ```bash
-$ docker run -d --link ttrssdb:db -p 80:80 clue/ttrss
+$ docker run -d --link ttrssdb:db -p 80:80 dragas/ttrss
 ```
 
 Running this command for the first time will download the image automatically.
@@ -171,7 +171,7 @@ This is particular useful for your initial database setup, as errors get reporte
 the console and further execution will halt.
 
 ```bash
-$ docker run -it --link tinydatabase:db -p 80:80 clue/ttrss
+$ docker run -it --link tinydatabase:db -p 80:80 dragas/ttrss
 ```
 
 ### Running ttrss daemonized
@@ -182,5 +182,5 @@ Remaining arguments can be passed just like before, the following is the recomme
 minimum:
 
 ```bash
-$ docker run -d --link tinydatabase:db -p 80:80 clue/ttrss
+$ docker run -d --link tinydatabase:db -p 80:80 dragas/ttrss
 ```
