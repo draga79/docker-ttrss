@@ -1,6 +1,6 @@
 # docker-ttrss
 
-This [Docker](https://www.docker.com) image, based on (and forked by) clue/tt-rss (which seems unmaintained and not working anymore), allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
+This [Docker](https://www.docker.com) image, based on (and forked by) [clue/tt-rss](https://hub.docker.com/r/clue/ttrss/) (which seems unmaintained and not working anymore), allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
 Keep your feed history to yourself and access your RSS and atom feeds from everywhere.
 You can access it through an easy to use webinterface on your desktop, your mobile browser
 or using one of the available apps.
