@@ -1,12 +1,12 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 MAINTAINER Stefano Marinelli <stefano@dragas.it>
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
-  nginx supervisor php5-fpm php5-cli php5-curl php5-gd php5-json \
-  php5-pgsql php5-mysql php5-mcrypt && apt-get clean && rm -rf /var/lib/apt/lists/*
+  nginx supervisor php-fpm php-cli php-curl php-gd php-json \
+  php-dom php-mbstring php-pgsql php-mysql php-mcrypt && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # enable the mcrypt module
-RUN php5enmod mcrypt
+RUN phpenmod mcrypt
 
 # add ttrss as the only nginx site
 ADD ttrss.nginx.conf /etc/nginx/sites-available/ttrss
@@ -35,4 +35,5 @@ ENV DB_PASS ttrss
 # always re-configure database with current ENV when RUNning container, then monitor all services
 ADD configure-db.php /configure-db.php
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+RUN mkdir /run/php/
 CMD php /configure-db.php && supervisord -c /etc/supervisor/conf.d/supervisord.conf
