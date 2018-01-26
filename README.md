@@ -28,11 +28,12 @@ Just start up a new database container:
 $ docker run -d --name ttrssdb nornagon/postgres
 ```
 
-And because this docker image is available as a [trusted build on the docker index](https://hub.docker.com/r/dragas/ttrss/),
+And because this docker image is available as a [trusted build on the docker index](https://hub.docker.com/r/
+/),
 using it is as simple as launching this Tiny Tiny RSS installation linked to your fresh database:
 
 ```bash
-$ docker run -d --link ttrssdb:db -p 80:80 dragas/ttrss
+$ docker run -d --link ttrssdb:db -p 80:80 dragas/ttrss:alpine
 ```
 
 Running this command for the first time will download the image automatically.
@@ -173,7 +174,7 @@ This is particular useful for your initial database setup, as errors get reporte
 the console and further execution will halt.
 
 ```bash
-$ docker run -it --link tinydatabase:db -p 80:80 dragas/ttrss
+$ docker run -it --link tinydatabase:db -p 80:80 dragas/ttrss:alpine
 ```
 
 ### Running ttrss daemonized
@@ -184,5 +185,5 @@ Remaining arguments can be passed just like before, the following is the recomme
 minimum:
 
 ```bash
-$ docker run -d --link tinydatabase:db -p 80:80 dragas/ttrss
+$ docker run -d --link tinydatabase:db -p 80:80 dragas/ttrss:alpine
 ```
