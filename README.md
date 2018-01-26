@@ -5,7 +5,7 @@ Keep your feed history to yourself and access your RSS and atom feeds from every
 You can access it through an easy to use webinterface on your desktop, your mobile browser
 or using one of the available apps.
 
-Two branches are available: master, the default branch pulling dragas/ttrss, is on Ubuntu Xenial and PHP 7, while the PHP5 branch is on Ubuntu Trusty and PHP 5, pulling dragas/ttrss:php5. An Alpine based container is planned on PHP 7.
+Three branches are available: master, the default branch pulling dragas/ttrss, is on Ubuntu Xenial and PHP 7, the PHP5 branch is on Ubuntu Trusty and PHP 5, pulling dragas/ttrss:php5. An Alpine based container is available with tag *dragas/ttrss:alpine*
 
 ## About Tiny Tiny RSS
 
