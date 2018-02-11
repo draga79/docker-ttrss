@@ -1,4 +1,4 @@
-![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) [![Docker Automated build](https://img.shields.io/docker/automated/dragas/docker-ttrss.svg)](https://hub.docker.com/r/dragas/docker-ttrss) [![](https://img.shields.io/docker/stars/dragas/docker-ttrss.svg)](https://hub.docker.com/r/dragas/docker-ttrss) [![](https://img.shields.io/docker/pulls/dragas/docker-ttrss.svg)](https://hub.docker.com/r/dragas/docker-ttrss)
+![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) [![Docker Automated build](https://img.shields.io/docker/automated/dragas/ttrss.svg)](https://hub.docker.com/r/dragas/ttrss) [![](https://img.shields.io/docker/stars/dragas/ttrss.svg)](https://hub.docker.com/r/dragas/ttrss) [![](https://img.shields.io/docker/pulls/dragas/ttrss.svg)](https://hub.docker.com/r/dragas/ttrss)
 
 
 # docker-ttrss
