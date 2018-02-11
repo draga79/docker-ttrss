@@ -1,3 +1,5 @@
+![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) [![Docker Automated build](https://img.shields.io/docker/automated/dragas/ttrss.svg)](https://hub.docker.com/r/dragas/ttrss) [![](https://img.shields.io/docker/stars/dragas/ttrss.svg)](https://hub.docker.com/r/dragas/ttrss) [![](https://img.shields.io/docker/pulls/dragas/ttrss.svg)](https://hub.docker.com/r/dragas/ttrss)
+
 # docker-ttrss
 
 This [Docker](https://www.docker.com) image, based on (and forked by) [clue/tt-rss](https://hub.docker.com/r/clue/ttrss/) (which seems unmaintained and not working anymore), allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
