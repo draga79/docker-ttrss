@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.9
 MAINTAINER Stefano Marinelli <stefano@dragas.it>
 
 RUN apk add --no-cache \
