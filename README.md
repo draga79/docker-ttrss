@@ -186,3 +186,11 @@ minimum:
 ```bash
 $ docker run -d --link tinydatabase:db -p 80:80 dragas/ttrss
 ```
+
+### Upgrading ###
+
+Sometimes you may need to update your database schema and you can't login. Execute a shell and update:
+
+```bash
+$ ./update.php --update-schema
+```
