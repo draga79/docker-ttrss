@@ -3,7 +3,7 @@ MAINTAINER Stefano Marinelli <stefano@dragas.it>
 
 RUN apk add --no-cache \
   nginx supervisor php7-fpm php7 php7-curl php7-gd php7-json \
-  php7-dom php7-mbstring php7-mysqli php7-pgsql php7-pdo_pgsql php7-pdo_mysql php7-mcrypt php7-fileinfo php7-pcntl php7-posix php7-session curl
+  php7-dom php7-intl php7-mbstring php7-mysqli php7-pgsql php7-pdo_pgsql php7-pdo_mysql php7-mcrypt php7-fileinfo php7-pcntl php7-posix php7-session curl
 
 # add ttrss as the only nginx site
 ADD ttrss.nginx.conf /etc/nginx/conf.d/ttrss.conf
